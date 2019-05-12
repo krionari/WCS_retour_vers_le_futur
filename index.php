@@ -19,4 +19,7 @@ $start = new DateTime('31-12-1985');
 $end = new DateTime();
 $interval = new DateInterval('P1M8D');
 $days = $timeTraveller->backToFutureStepByStep(new DatePeriod($start, $interval, $end));
-echo $days[50];
+
+echo '<pre>';
+var_dump($days);
+echo '</pre>';
